@@ -1,16 +1,16 @@
-- [Accueil](accueil.md)
-- **Cadre général et définitions**
+- [🏠 Accueil](accueil.md)
+- **📜 Cadre général et définitions**
   - [Cadre réglementaire](cadre-general.md)
   - [Définitions clés](definitions.md)
-- **Licence PNC**
+- **🛫 Licence PNC**
   - [Conditions d'obtention](conditions-licence.md)
   - [Carnet de vol](carnet-vol.md)
-- **Formation**
+- **📚 Formation**
   - [Certificat Sécurité-Sauvetage](css.md)
   - [Manuels obligatoires](manuels-obligatoires.md)
-- **Documentation complète**
+- **📖 Documentation complète**
   - [Sommaire détaillé](sommaire-complet.md)
-- **Perspectives d'amélioration**
+- **💡 Perspectives d'amélioration**
   - [Zones à développer](gaps.md)
   - [Propositions concrètes](propositions.md)
   - [Feuille de route](roadmap.md)
