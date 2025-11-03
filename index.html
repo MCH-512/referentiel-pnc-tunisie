@@ -3,11 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Référentiel unifié des textes réglementaires tunisiens sur le Personnel Navigant de Cabine (PNC)" />
   <title>Référentiel PNC Tunisie</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+  <style>
+    :root {
+      --theme-color: #1890ff;
+    }
+    .search {
+      margin: 10px 20px;
+    }
+    .search input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .sidebar {
+      padding-top: 0 !important;
+    }
+    .app-name-link {
+      display: block;
+      padding: 15px 20px !important;
+      font-size: 1.2em !important;
+      font-weight: bold !important;
+    }
+  </style>
 </head>
 <body>
   <div id="app">Chargement...</div>
+  
   <script>
     window.$docsify = {
       name: 'Référentiel PNC Tunisie',
@@ -17,9 +43,37 @@
       subMaxLevel: 2,
       themeColor: '#1890ff',
       homepage: 'accueil.md',
-      notFoundPage: '_404.md'
+      notFoundPage: '_404.md',
+      search: {
+        maxAge: 86400000, // 1 jour en ms
+        paths: 'auto',
+        placeholder: '🔍 Rechercher dans le référentiel...',
+        noData: 'Aucun résultat trouvé',
+        depth: 3,
+        hideOtherSidebarContent: false
+      },
+      plugins: [
+        function(hook, vm) {
+          hook.afterEach(function(html, next) {
+            // Ajouter des métadonnées pour améliorer la recherche
+            const pageTitle = vm.route.name || 'Accueil';
+            return `<div class="page-metadata" data-title="${pageTitle}">${html}</div>`;
+          });
+        }
+      ]
     };
   </script>
+  
+  <!-- Core Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- Plugin de recherche -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!-- Plugin de navigation -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  
+  <!-- Plugin de copie de code -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
