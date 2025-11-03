@@ -9,11 +9,11 @@
   - Être détenteur de la **carte de stagiaire** en cours de validité
   - Avoir suivi le **stage de familiarisation en vol** (60 heures)
 
-- **Validité** : 12 mois
+- **Validité** : 12 mois  
 - **Renouvellement** : recyclage périodique à jour
 
 ## 📚 Contenu pédagogique (Décision 226/2004)
-- Repose sur le **Certificat de Sécurité et Sauvetage** (185h de formation)
+- Repose sur le **Certificat de Sécurité et Sauvetage** (185h)
 - Le **stage en vol** (60h) comprend 4 phases :
   1. Observation
   2. Initiation
