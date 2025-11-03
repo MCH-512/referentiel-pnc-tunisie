@@ -8,6 +8,8 @@
 - **📚 Formation**
   - [Certificat Sécurité-Sauvetage](css.md)
   - [Manuels obligatoires](manuels-obligatoires.md)
+  - - **Scénarios CRM**
+  - [Passager perturbateur](scenario-passager-perturbateur.md)
 - **📖 Documentation complète**
   - [Sommaire détaillé](sommaire-complet.md)
 - **💡 Perspectives d'amélioration**
