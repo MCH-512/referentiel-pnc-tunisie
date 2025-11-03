@@ -1,10 +1,8 @@
 - [Accueil](accueil.md)
 - **Licence PNC**
-  - [Exigences, procédures, contenu](licence.md)
-  - - [Recyclage](recyclage.md)
-- [Zones à développer](gaps.md)
-- **Recyclage**
-  - [Annuel, validation, gaps](recyclage.md)
+  - [Conditions, procédures, contenu](licence.md)
+- **Recyclage périodique**
+  - [Exigences, programme, gaps](recyclage.md)
 - **Qualification de type**
   - [Durée, vol minimum, multi-type](qualification-type.md)
 - **Instructeur PNC**
