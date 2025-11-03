@@ -45,35 +45,17 @@
       homepage: 'accueil.md',
       notFoundPage: '_404.md',
       search: {
-        maxAge: 86400000, // 1 jour en ms
+        maxAge: 86400000,
         paths: 'auto',
         placeholder: '🔍 Rechercher dans le référentiel...',
         noData: 'Aucun résultat trouvé',
         depth: 3,
         hideOtherSidebarContent: false
-      },
-      plugins: [
-        function(hook, vm) {
-          hook.afterEach(function(html, next) {
-            // Ajouter des métadonnées pour améliorer la recherche
-            const pageTitle = vm.route.name || 'Accueil';
-            return `<div class="page-metadata" data-title="${pageTitle}">${html}</div>`;
-          });
-        }
-      ]
+      }
     };
   </script>
   
-  <!-- Core Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  
-  <!-- Plugin de recherche -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  
-  <!-- Plugin de navigation -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  
-  <!-- Plugin de copie de code -->
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
